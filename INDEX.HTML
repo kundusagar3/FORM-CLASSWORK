@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .country-code {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding-right: 23px;
+        color: #737272;
+        font-size: 15px;
+      }
+      .name {
+        margin-top: 18px;
+      }
+      .pass {
+        margin-top: 36px;
+      }
+      .input {
+        width: 130px;
+      }
+      .phone {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div>
+          <label for="firstname">Firstname:</label>
+          <input id="firstname" class="input" />
+        </div>
+        <div class="name">
+          <label for="middlename">Middlename:</label>
+          <input id="middlename" class="input" />
+        </div>
+        <div class="name">
+          <label for="lastname">Lastname:</label>
+          <input id="lastname" class="input" />
+        </div>
+        <div class="name">
+          <label>Course :</label>
+          <select>
+            <option value="" selected disabled>Course</option>
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+            <option value="b.tech">B.Tech</option>
+            <option value="mba">MBA</option>
+            <option value="mca">MCA</option>
+            <option value="m.texh">M.Tech</option>
+          </select>
+        </div>
+        <div>
+          <div>
+            <div class="name"><label>Gender : </label></div>
+            <div><input type="radio" name="gen" value="male" /> Male</div>
+            <div><input type="radio" name="gen" value="female" /> Female</div>
+            <div><input type="radio" name="gen" value="other" /> Other</div>
+          </div>
+        </div>
+
+        <div class="name">
+          <label>DOB</label>
+          <input type="datetime-local" />
+        </div>
+        <div>
+          <label>Phone :</label>
+          <span class="country-code">+91</span>
+          <input type="tel" class="phone" />
+        </div>
+        <div class="name">
+          <label>Address</label>
+          <div><textarea rows="5" cols="85"></textarea></div>
+        </div>
+        <div class="name">
+          <label>Email:</label>
+          <input type="email" />
+        </div>
+        <div class="pass">
+          <label>Password:</label>
+          <input type="password" />
+        </div>
+        <div class="pass">
+          <label>Re-type password:</label>
+          <input type="password" />
+        </div>
+        <div class="name">
+          <input type="checkbox" />
+          <label>Agree to terms and conditions</label>
+        </div>
+        <div class="name">
+          <label>Choose File</label>
+          <input type="file" />
+        </div>
+        <div class="name">
+          <label>Choose Color</label>
+          <input type="color" />
+        </div>
+        <div class="name">
+          <input type="reset" name="reset" />
+          <button type="button">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
